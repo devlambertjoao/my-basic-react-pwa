@@ -1,7 +1,7 @@
 {
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/app/",
+  "Scope": "app",
   "start_url": "/",
   "short_name": "My basic react PWA",
   "name": "Basic PWA",
