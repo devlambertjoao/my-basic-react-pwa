@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {lazy, Suspense} from 'react'
 import { Redirect, Route, Switch } from 'react-router-dom'
-import About from '../pages/about'
-import Home from '../pages/home'
+
+const About = lazy(() => import('../pages/about'));
+const Home = lazy(() => import('../pages/about'));
 
 //type RouteParams = {
 //    id: string
@@ -10,7 +11,8 @@ import Home from '../pages/home'
 const Routes = () => {
 
 return (
-    <Switch>
+    <Suspense fallback={<div>Loading...</div>}>
+        <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/about" component={About}/>
         <Route component={() => <Redirect to="/" />} />        
@@ -26,8 +28,9 @@ return (
         
         </> : <Redirect to="/"/>}
             */}
-    </Switch>
-    )
+        </Switch>
+    </Suspense>
+)
 }
 
 export default Routes
