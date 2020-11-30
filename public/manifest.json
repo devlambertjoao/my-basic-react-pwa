@@ -1,9 +1,9 @@
 {
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "index.html",
-  "short_name": "My basic react PWA",
-  "name": "Basic PWA",
+  "start_url": "/",
+  "short_name": "Lambert PWA",
+  "name": "Lambert PWA",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "icons": [
