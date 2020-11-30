@@ -1,8 +1,7 @@
 {
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "app",
-  "start_url": "/",
+  "start_url": "index.html",
   "short_name": "My basic react PWA",
   "name": "Basic PWA",
   "theme_color": "#000000",

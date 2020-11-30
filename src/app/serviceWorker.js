@@ -1,8 +1,8 @@
 function registerServiceWorker() {
     if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/sw.js', {
-                scope: '/app/'
+            navigator.serviceWorker.register('/my-basic-react-pwa/sw.js', {
+                scope: '/my-basic-react-pwa/'
             })
             .then((registration) => {
                 console.log('ServiceWorker registration successful with scope: ', 
