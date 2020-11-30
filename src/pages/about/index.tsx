@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div>
             <span>About me:</span>
-            <Link to="/home">
+            <Link to="/">
                 <button>Home</button>
             </Link>
         </div>
