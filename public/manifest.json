@@ -4,8 +4,8 @@
   "start_url": "/",
   "short_name": "Lambert PWA",
   "name": "Lambert PWA",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
+  "theme_color": "#000",
+  "background_color": "#ff7900",
   "icons": [
     {
       "src": "favicon.ico",
