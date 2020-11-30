@@ -1,7 +1,7 @@
 {
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "/home",
+  "start_url": "/",
   "short_name": "Lambert PWA",
   "name": "Lambert PWA",
   "theme_color": "#000",
