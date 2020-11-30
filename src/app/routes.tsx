@@ -1,19 +1,19 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Redirect, Route, Switch } from 'react-router-dom'
 import About from '../pages/about'
 import Home from '../pages/home'
 
-type RouteParams = {
-    id: string
-}
+//type RouteParams = {
+//    id: string
+//}
 
 const Routes = () => {
 
 return (
     <Switch>
         <Route exact path="/" component={Home}/>
-        <Route exact path="/about" component={About}/>
-        
+        <Route path="/about" component={About}/>
+        <Route component={() => <Redirect to="/" />} />        
         {/* 
         {AppService.isAuth() ? <>
         
