@@ -1,6 +1,11 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": ".",
+  "short_name": "Lambert PWA",
+  "name": "Lambert PWA",
+  "theme_color": "#000",
+  "background_color": "#ff7900",
   "icons": [
     {
       "src": "favicon.ico",
@@ -17,9 +22,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
