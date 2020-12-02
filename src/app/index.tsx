@@ -1,14 +1,15 @@
-import React from 'react';
-import {  BrowserRouter } from 'react-router-dom';
-import Header from '../shared/header';
-import Routes from './routes';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "./routes";
+import "./styles.css";
 
-export default function App() {
-    return (
-        <BrowserRouter>
-            <Header />
-            <Routes />
-        </BrowserRouter>
-    );
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes />
+      <span>my pwa</span>
+    </BrowserRouter>
+  );
 }
 
+export default App;

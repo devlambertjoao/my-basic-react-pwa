@@ -1,16 +1,14 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Home = () => {
-    return (
-        <div>
-            <span>This is my pwa application</span>
-            <Link to="/about">
-                <button>About</button>
-            </Link>
-        </div>
-    );
-}
+const About = () => {
+  return (
+    <div>
+      <Link to="/about">
+        <button>To about</button>
+      </Link>
+    </div>
+  );
+};
 
-export default Home
-
+export default About;

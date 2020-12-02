@@ -1,16 +1,14 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
-    return (
-        <div>
-            <span>About me:</span>
-            <Link to="/">
-                <button>Home</button>
-            </Link>
-        </div>
-    );
-}
+  return (
+    <div>
+      <Link to="/">
+        <button>To home</button>
+      </Link>
+    </div>
+  );
+};
 
-export default About
-
+export default About;
