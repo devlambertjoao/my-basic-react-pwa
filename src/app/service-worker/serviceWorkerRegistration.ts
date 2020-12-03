@@ -41,6 +41,7 @@ function registerValidSW(swUrl: string, config?: Config) {
   navigator.serviceWorker
     .register(swUrl)
     .then((registration) => {
+      clearCache();
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         if (installingWorker == null) {
@@ -71,6 +72,14 @@ function registerValidSW(swUrl: string, config?: Config) {
     .catch((error) => {
       console.error("Error during service worker registration:", error);
     });
+}
+
+function clearCache() {
+  caches.keys().then((cacheNames) => {
+    cacheNames.forEach((cacheName) => {
+      caches.delete(cacheName);
+    });
+  });
 }
 
 function checkValidServiceWorker(swUrl: string, config?: Config) {
