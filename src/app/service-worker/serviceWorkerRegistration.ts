@@ -74,13 +74,13 @@ function registerValidSW(swUrl: string, config?: Config) {
     });
 }
 
-function clearCache() {
-  caches.keys().then((cacheNames) => {
-    cacheNames.forEach((cacheName) => {
-      caches.delete(cacheName);
-    });
-  });
-}
+//function clearCache() {
+//  caches.keys().then((cacheNames) => {
+//    cacheNames.forEach((cacheName) => {
+//      caches.delete(cacheName);
+//    });
+//  });
+//}
 
 function checkValidServiceWorker(swUrl: string, config?: Config) {
   fetch(swUrl, {
