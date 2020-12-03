@@ -8,9 +8,9 @@ const Routes = () => {
   return (
     <Switch>
       <Suspense fallback={<div>Loading...</div>}>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/home" component={Home} />
         <Route path="/about" component={About} />
-        <Route component={() => <Redirect to="/" />} />
+        <Route component={() => <Redirect to="/home" />} />
       </Suspense>
     </Switch>
   );
