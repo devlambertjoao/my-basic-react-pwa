@@ -10,7 +10,6 @@ const Routes = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <Route exact path="/home" component={Home} />
         <Route path="/about" component={About} />
-        <Route component={() => <Redirect to="/home" />} />
       </Suspense>
     </Switch>
   );
